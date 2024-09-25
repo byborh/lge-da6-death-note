@@ -25,7 +25,8 @@ class EntryDAO {
     
     public function getEntries(){
         $this->connect();
-        $results = $this->db->query("SELECT id, firstname, lastname, timeAndDate, cause FROM Entries");
+        $req = "SELECT id, firstname, lastname, timeAndDate, cause FROM Entries";
+        $results = $this->db->query($req);
         $entries = [];
         while($line = $results->fetch_assoc()){
             $entries[]=new EntryDTO($line);
@@ -36,6 +37,7 @@ class EntryDAO {
 
     public function addEntry($array) {
         $this->connect();
-        $this->db->query("INSERT INTO Entries(firstname, lastname, timeAndDate, cause) VALUES ('" . $array["firstname"] . "','" . $array["lastname"] ."','" . $array["timeAndDate"] . "','" . $array["cause"] . "');");
+        $req = "INSERT INTO Entries(firstname, lastname, timeAndDate, cause) VALUES ('" . $array["firstname"] . "','" . $array["lastname"] ."','" . $array["timeAndDate"] . "','" . $array["cause"] . "');";
+        $this->db->query($req);
     }
 }
