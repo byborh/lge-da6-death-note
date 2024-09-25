@@ -1,0 +1,23 @@
+﻿/* @font-face kit by Fonts2u (https://fonts2u.com) */
+@font-face {
+    font-family: "DEATHNOTE Font";
+    src: url("dnfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cloister Black";
+    src: url("CloisterBlack.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Death Font";
+    src: url("death_font.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+

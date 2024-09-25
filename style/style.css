@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "DEATHNOTE Font";
+    min-width: 320px;
+}
+
+body > h1 {
+    font-size: 4em;
+    text-align: center;
+    font-family: "Death Font";
+}
+
+container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+article {
+    min-height: 320px;
+    min-width: 320px;
+    height: 320px;
+    width: 320px;
+    overflow: scroll;
+    box-shadow: 1px 1px 4px red;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 1%;
+    margin: 1%;
+}
+
+article::-webkit-scrollbar {
+    display: none;
+}
+
+article > h1 {
+    font-size: 1.6em;
+}
+
+.datetime {
+    font-weight: bold;
+}
+
+.cause {
+    font-size: 1.2em;
+}
+
+form {
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin-left: 35%;
+    padding: 2%;
+}
+
+label {
+    font-weight: bolder;
+    font-family: "Cloister Black";
+}
+
+button {
+    background-color: black;
+    color: red;
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-family: "DEATHNOTE Font";
+}
+
+input, textarea {
+    background-color: burlywood;
+    padding: 2%;
+    line-height: 2em;
+    font-family: "Homemade Apple";
+}
+
+
+@media screen and (max-width: 1281px){
+    form {
+        margin-left: 25%;
+    }
+}
+
+
+@media screen and (max-width: 947px){
+    form {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+
+@media screen and (max-width: 798px){
+    form {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    form {
+        margin: 5%;
+    }
+}
